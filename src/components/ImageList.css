@@ -1,0 +1,22 @@
+.image-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-card {
+    width: calc(100% / 3); /* Set the width for each column */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.image-description {
+    margin-top: 8px;
+}
