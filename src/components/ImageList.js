@@ -1,13 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ImageList.css'; // Import your custom CSS file
+import ImageShow from './ImageShow'; // Import the ImageShow component
 
 function ImageList({ images }) {
     return (
         <div className="image-list-container">
             {images.map((image) => (
-                <div key={image.id} className="image-card">
-                    <img src={image.urls.small} alt={image.alt_description} className="image" />
-                </div>
+                <ImageShow key={image.id} image={image} /> // Pass the 'image' prop to the ImageShow component
             ))}
         </div>
     );
